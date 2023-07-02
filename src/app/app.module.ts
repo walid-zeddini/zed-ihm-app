@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { CommandesComponent } from './commandes/commandes.component';
 import { ProduitsComponent } from './produits/produits.component';
 import { AjoutCommandeComponent } from './ajout-commande/ajout-commande.component';
+import {MyDateTimeFormatPipe} from './ajout-commande/my-datetime-format.pipe';
+import {CustomDatePipe} from './ajout-commande/custom.datepipe';
 import { AjoutProduitComponent } from './ajout-produit/ajout-produit.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
@@ -18,6 +20,8 @@ import { EditProduitComponent } from './edit-produit/edit-produit.component';
     CommandesComponent,
     ProduitsComponent,
     AjoutCommandeComponent,
+    MyDateTimeFormatPipe,
+    CustomDatePipe,
     AjoutProduitComponent,
     LoginComponent,
     EditProduitComponent
