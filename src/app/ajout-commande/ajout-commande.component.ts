@@ -26,7 +26,7 @@ export class AjoutCommandeComponent implements OnInit {
   indexUpdate: number;
   produits: IProduit[];
 
-  
+   datetimestamp = Date.now() + Math.random().toString();
   constructor(private ClientService: ClientService,private commandeService: CommandeService, private produitService: ProduitService,private router: Router) { }
 
   ngOnInit(): void {
@@ -39,6 +39,7 @@ export class AjoutCommandeComponent implements OnInit {
     this.order.ligneCommande = [];
     this.order.commande.clientId = 1;
     this.order.commande.prixTotal = 0;
+    this.order.commande.numero = this.datetimestamp;
     this.order.commande.etat = 1;
     this.getClientFromOrderService();
     this.loadAllProduits();

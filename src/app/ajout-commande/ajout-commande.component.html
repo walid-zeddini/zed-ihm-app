@@ -2,23 +2,23 @@
 <br>
 <br>
 <div class="card col-md-10 offset-md-1">
-    <div class="card-header">
+    <div class="card-header" style="font-weight: bold;">
         Nouvelle Commande
-
-
     </div>
     <div class="card-body">
         <div class="row">
-            <div class="col-md-4">
-                <label for="field_numero" class="form-label">Numéro</label>
-                <input [(ngModel)]="order.commande.numero" type="text" class="form-control">
+            <div class="col-md-5">
+                <label for="field_numero" class="form-label" style="font-weight: bold;">Numéro</label>
+                <br>
+                <label for="field_date" class="form-label">{{ order.commande.numero}}</label>
+            </div>
+            <div class="col-md-3">
+                <label for="field_date" class="form-label" style="font-weight: bold;">Date</label>
+                <br>
+                <label for="field_date" class="form-label">{{ order.commande.date | myDateTimeFormat }}</label>
             </div>
             <div class="col-md-4">
-                <label for="field_date" class="form-label">Date</label>
-                <input [(ngModel)]="order.commande.date" {{ order.commande.date | myDateTimeFormat }} type="text" readonly class="form-control">
-            </div>
-            <div class="col-md-4">
-                <label for="field_montant" class="form-label">Montant</label>
+                <label for="field_montant" class="form-label" style="font-weight: bold;" >Montant</label>
                 <input [(ngModel)]="order.commande.prixTotal" type="text" readonly class="form-control">
             </div>
 
@@ -28,7 +28,7 @@
             <div class="row">
 
                 <div class="col-md-6">
-                    <label for="field_produit" class="form-label">Produit</label>
+                    <label for="field_produit" class="form-label" style="font-weight: bold;">Produit</label>
                     <select class="form-control" id="produit" name="produit"
                      [(ngModel)]="lignesTemp.produit"
                      (ngModelChange)="affecterProduit($event)"
@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <label for="exampleFormControlInput2" class="form-label">Quantité</label>
+                    <label for="exampleFormControlInput2" class="form-label" style="font-weight: bold;">Quantité</label>
                     <input [(ngModel)]="lignesTemp.qte" type="text" class="form-control">
                 </div>
                 <div class="col-md-2 align-self-end">
