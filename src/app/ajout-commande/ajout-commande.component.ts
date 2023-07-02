@@ -35,7 +35,7 @@ export class AjoutCommandeComponent implements OnInit {
     this.order.client = new Client();
     this.order.commande = new Commande();
     this.lignesTemp = new LigneCommande();
-    this.order.commande.date = moment();
+    this.order.commande.date = moment().format('DD-MM-YYYY HH:mm:ss');
     this.order.ligneCommande = [];
     this.order.commande.clientId = 1;
     this.order.commande.prixTotal = 0;

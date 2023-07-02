@@ -15,7 +15,7 @@
             </div>
             <div class="col-md-4">
                 <label for="field_date" class="form-label">Date</label>
-                <input [(ngModel)]={{order.commande.date | date:'full':'+0200':'fr'}} type="text" readonly class="form-control">
+                <input [(ngModel)]="order.commande.date" type="text" readonly class="form-control">
             </div>
             <div class="col-md-4">
                 <label for="field_montant" class="form-label">Montant</label>
