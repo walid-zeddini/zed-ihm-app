@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const SERVER_API_URL_ORDER = 'http://localhost:9090';\nexport const SERVER_API_URL_STOCK = 'http://localhost:9191';","map":null,"metadata":{},"sourceType":"module"}

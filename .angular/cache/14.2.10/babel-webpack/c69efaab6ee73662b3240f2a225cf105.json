@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Commande {\n  constructor(id, numero, date, prixTotal, clientId, etat) {\n    this.id = id;\n    this.numero = numero;\n    this.date = date;\n    this.prixTotal = prixTotal;\n    this.clientId = clientId;\n    this.etat = etat;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

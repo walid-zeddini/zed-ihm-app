@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Order {\n  constructor(client, commande, ligneCommande) {\n    this.client = client;\n    this.commande = commande;\n    this.ligneCommande = ligneCommande;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
