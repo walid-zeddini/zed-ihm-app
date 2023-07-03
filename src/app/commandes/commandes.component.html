@@ -14,11 +14,11 @@
   <tbody>
     <tr *ngFor="let order of orders">
       <th scope="row">{{order.commande.numero}}</th>
-      <td>{{order.commande.date}}</td>
+      <td>{{order.commande.date | customDate }}</td>
       <td>{{order.commande.prixTotal}}</td>
       <td>
         <ul *ngIf="order.ligneCommande && order.ligneCommande.length > 0"class="list-group">
-          <li *ngFor="let c of order.ligneCommande" class="list-group-item">{{c.produit.code}} ({{c.qte}} article(s)) : montant {{c.prixTotal}}</li>
+          <li *ngFor="let c of order.ligneCommande" class="list-group-item">{{c.produit.code}}-{{c.produit.caracteristiques}} ({{c.qte}} article(s)) : montant {{c.prixTotal}}</li>
         </ul>
       </td>
     </tr>

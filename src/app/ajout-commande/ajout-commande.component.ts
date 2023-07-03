@@ -26,7 +26,7 @@ export class AjoutCommandeComponent implements OnInit {
   indexUpdate: number;
   produits: IProduit[];
 
-   datetimestamp = Date.now() + Math.random().toString();
+   datetimestamp = (Date.now() + Math.random().toString()).substring(0,14);
   constructor(private ClientService: ClientService,private commandeService: CommandeService, private produitService: ProduitService,private router: Router) { }
 
   ngOnInit(): void {

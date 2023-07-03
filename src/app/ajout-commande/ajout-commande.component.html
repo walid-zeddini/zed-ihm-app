@@ -3,7 +3,7 @@
 <br>
 <div class="card col-md-10 offset-md-1">
     <div class="card-header" style="font-weight: bold;">
-        Nouvelle Commande
+    Nouvelle Commande
     </div>
     <div class="card-body">
         <div class="row">
@@ -18,7 +18,7 @@
                 <label for="field_date" class="form-label">{{ order.commande.date | myDateTimeFormat }}</label>
             </div>
             <div class="col-md-4">
-                <label for="field_montant" class="form-label" style="font-weight: bold;" >Montant</label>
+                <label for="field_montant" class="form-label" style="font-weight: bold;" >Montant Total</label>
                 <input [(ngModel)]="order.commande.prixTotal" type="text" readonly class="form-control">
             </div>
 
@@ -60,9 +60,9 @@
                 <thead>
                     <tr>
                         <th>Produit</th>
-                        <th>Prix unitaire</th>
+                        <th>Prix Unitaire</th>
                         <th>Quantité</th>
-                        <th>Prix</th>
+                        <th>Prix Total</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -70,7 +70,7 @@
 
                     <tr>
                         <td>
-                            {{lc.produit.code}}
+                            {{lc.produit.code}}-{{lc.produit.caracteristiques}}
                         </td>
                         <td>
                             {{lc.produit.prixUnitaire}}
