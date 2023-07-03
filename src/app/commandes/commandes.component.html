@@ -18,7 +18,7 @@
       <td>{{order.commande.prixTotal}}</td>
       <td>
         <ul *ngIf="order.ligneCommande && order.ligneCommande.length > 0"class="list-group">
-          <li *ngFor="let c of order.ligneCommande" class="list-group-item">{{c.produit.caracteristiques}}-{{c.produit.marque}} ({{c.qte}} article(s) : PU {{c.produit.prixUnitaire}} PT {{c.prixTotal}} )</li>
+          <li *ngFor="let c of order.ligneCommande" class="list-group-item">{{c.produit.caracteristiques}}-{{c.produit.marque}} ({{c.qte}} article(s) : Prix {{c.produit.prixUnitaire}} Total {{c.prixTotal}} )</li>
         </ul>
       </td>
     </tr>
